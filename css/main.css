@@ -129,8 +129,12 @@ li.current {
     top: 240px;
 }
 
-.inner-nav li:last-of-type {
+.inner-nav li:nth-of-type(5) {
     top: 300px;
+}
+
+.inner-nav li:last-of-type {
+    top: 360px;
 }
 
 .main-nav li:hover {
