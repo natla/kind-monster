@@ -1,2 +1,2 @@
 # kind-monster
-Mock-up website project for a online boutique selling handmade dolls
+Mock-up website project for an online boutique selling handmade dolls
