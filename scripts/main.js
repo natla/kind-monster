@@ -16,8 +16,11 @@ date.innerText = currentYear;
 // Create image gallery:
 var currentImg = document.querySelector('#gallery-current'),
     smallGal = document.querySelector('.small-gal');
-smallGal.addEventListener('click', function (ev) {
+	if (smallGal) {
+		smallGal.addEventListener('click', function (ev) {
     if (ev.target.nodeName == 'IMG') {
         currentImg.src = ev.target.src;
     }
 }, false);
+}
+

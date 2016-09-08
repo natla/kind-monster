@@ -75,6 +75,7 @@ h2 {
 main {
     margin-left: 15px;
     margin-right: 15px;
+	min-width: 320px;
 }
 
 /*
@@ -207,7 +208,7 @@ hr {
  */
 
 main footer {
-    padding: 45px 35px;
+    padding: 40px 35px;
     height: 190px;
     background-color: #ceb592;
     box-sizing: border-box;
@@ -563,7 +564,36 @@ textarea {
 	.text h4{
 		margin-top: 10px;
 	}
-	 {
-		
+	.share-icons{
+		width: 100%;
+	}
+	main footer h2 {
+		width: 100%;
+		margin-bottom: 10px;
 	}
 }
+
+@media screen and (max-width: 433px){
+	.share-icons i {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+}
+@media screen and (max-width: 378px){
+	.share-icons i {
+		font-size: 2.5em;
+		padding-right: 8px;
+	}
+	.share-icons i:last-of-type {
+		padding-right: 0;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	.right-aligned{
+		display: none;
+	}
+}
+
