@@ -548,11 +548,22 @@ textarea {
 }
 
 @media screen and (max-width: 480px){
-	.container {
+	.container, .gal-row{
 		display: block;
 	}
 	.gallery, .text{
 		max-width: 100%;
 		width: 100%;
+	}
+	.image-container, .gal-row .small-img-cont {
+		max-width: 100%;
+		width: 100%;
+		margin-right: 0;
+	}
+	.text h4{
+		margin-top: 10px;
+	}
+	 {
+		
 	}
 }
