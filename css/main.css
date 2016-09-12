@@ -85,14 +85,14 @@ main {
    /
  */
 
-#menu-icon, #plus-icon, #minus-icon {
+#menu-icon, .plus-icon, .minus-icon {
     color: #25292B;
     color: rgba(51, 51, 51, .85);
     font-size: 2.6em;
     display: none;
 }
 
-#plus-icon, #minus-icon {
+.plus-icon, .minus-icon {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -100,25 +100,25 @@ main {
     transition: .3s all ease-out;
 }
 
-#plus-icon {
+.plus-icon {
     opacity: 1;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 
-#plus-icon.rotate {
+.plus-icon.rotate {
     opacity: 0;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
-#minus-icon {
+.minus-icon {
     opacity: 0;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
-#minus-icon.rotate {
+.minus-icon.rotate {
     opacity: 1;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -137,7 +137,7 @@ main {
 }
 
 .main-nav li.current, .main-nav .inner-nav li.current {
-    background-color: #87c9a3;
+    background-color: #b9a283;
 }
 
 .main-nav li a {
@@ -176,15 +176,15 @@ main {
     top: 300px;
 }
 
-.inner-nav li:last-of-type {
+.inner-nav li:nth-of-type(6) {
     top: 360px;
 }
 
-.main-nav li:not(.no-hover):hover { /* only apply hover styling when the div does not have the class 'no-hover' */
+.main-nav li:hover { /* only apply hover styling when the div does not have the class 'no-hover' */
     background-color: #87c9a3;
 }
 
-.main-nav li:not(.no-hover):hover .inner-nav { /* only apply hover styling when the div does not have the class 'no-hover' */
+.main-nav li:hover .inner-nav { /* only apply hover styling when the div does not have the class 'no-hover' */
     display: block;
 }
 
@@ -599,7 +599,7 @@ textarea {
 */
 
 @media screen and (max-width: 767px) {
-    #menu-icon, #plus-icon, #minus-icon {
+    #menu-icon, .plus-icon, .minus-icon {
         display: block;
     }
 
@@ -660,6 +660,10 @@ textarea {
         text-align: center;
     }
 
+    .main-nav li:hover .inner-nav:not(.open) {
+        display: none;
+    }
+
     .inner-nav.open {
         display: block;
         text-align: center;
@@ -671,6 +675,10 @@ textarea {
         position: relative;
         top: 21px;
         background-color: #EDCEA1;
+    }
+
+    .inner-nav.open li:hover {
+        background-color: #87c9a3;
     }
 
     .inner-nav.open li:first-of-type {
@@ -687,7 +695,25 @@ textarea {
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 767px) {
+    .gal-row .small-img-cont {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .gal-row .small-img-cont {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .gal-row .small-img-cont {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 626px) {
     .gal-row {
         display: block;
     }

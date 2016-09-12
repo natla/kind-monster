@@ -16,7 +16,7 @@
 <body>
 <div class="grid">
     <header class="page-header">
-        <img src="images/sg-sidebar-banner4.png">
+        <img src="images/home/sg-sidebar-banner4.png">
         <h1>Kind Monster Café</h1>
     </header>
     <div class="container"></div>
@@ -29,23 +29,23 @@
                 </li>
                 <li>
                     <a href="#">Dolls</a>
-                    <i id="minus-icon" class="fa fa-minus" aria-hidden="true"></i>
-                    <i id="plus-icon" class="fa fa-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus minus-icon" aria-hidden="true"></i>
+                    <i class="fa fa-plus plus-icon" aria-hidden="true"></i>
                     <ul class="inner-nav">
-                           <li>
+                        <li>
                             <a href="dolls/ballerina.html">Ballerina</a>
                         </li>
                         <li>
-                            <a href="dolls/cupcakes.html">Cupcakes</a>
+                            <a href="dolls/cherry.html">Cherry</a>
                         </li>
-                         <li>
+                        <li>
                             <a href="dolls/malvina.html">Malvina</a>
                         </li>
                         <li>
-                            <a href="dolls/dilly.html">Dilly</a>
+                            <a href="dolls/yana.html">Yana</a>
                         </li>
                         <li>
-                            <a href="dolls/marie.html">Marie</a>
+                            <a href="dolls/bunny.html">Bunny</a>
                         </li>
                         <li>
                             <a href="dolls/ronnie.html">Ronnie</a>
@@ -53,10 +53,29 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="amigurumi.html">Amigurumi</a>
+                    <a href="amigurumi.html">Winter Amis</a>
                 </li>
-                 <li>
-                    <a href="#">Creatures</a>
+                <li>
+                    <a href="#">Tiny Amis</a>
+                    <i class="fa fa-minus minus-icon" aria-hidden="true"></i>
+                    <i class="fa fa-plus plus-icon" aria-hidden="true"></i>
+                    <ul class="inner-nav">
+                        <li>
+                            <a href="tiny/rabbit.html">Tiny Rabbit</a>
+                        </li>
+                        <li>
+                            <a href="tiny/dog.html">Tiny Dog</a>
+                        </li>
+                        <li>
+                            <a href="tiny/fox.html">Tiny Fox</a>
+                        </li>
+                        <li>
+                            <a href="tiny/sheep.html">Tiny Sheep</a>
+                        </li>
+                        <li>
+                            <a href="tiny/snail.html">Tiny Snail</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Desserts</a>
@@ -71,43 +90,45 @@
         </nav>
         <section class="hero">
             <header>
-                <img src="images/smaller/cupcake.jpg">
+                <img src="images/contact/cupcake.jpg">
                 <h3 class="contact">Contact Me</h3>
             </header>
 
-				<form name="contact" method="post" action="#">
-					<fieldset class="contact-form">
-						<label>
-						<span>Name &#42;</span>
-							<input type="text" name="name" required>
-						</label>
-						<label>
-						<span>Email &#42;</span>
-							<input type="email" name="email" required>
-						</label>
-						<label>
-						<span>Message</span>
-							<textarea name="comments" placeholder="Message me here"></textarea>
-						</label>
-					</fieldset>
-					<input class="buy-btn" type="submit" name="submit" value="send">
-				</form>
+            <form name="contact" method="post" action="#">
+                <fieldset class="contact-form">
+                    <label>
+                        <span>Name &#42;</span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        <span>Email &#42;</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="comments" placeholder="Message me here"></textarea>
+                    </label>
+                </fieldset>
+                <input class="buy-btn" type="submit" name="submit" value="send">
+            </form>
 
         </section>
         <footer>
             <div class="container">
-                      <section class="share-icons container">
+                <section class="share-icons container">
                     <a class="share-facebook"
                        href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F&amp;t=Contact"
                        title="Facebook" target="_blank">
                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
                     </a>
                     <a class="share-twitter"
-                       href="http://twitter.com/share?text=Contact&amp;url=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F" title="Twitter"
+                       href="http://twitter.com/share?text=Contact&amp;url=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F"
+                       title="Twitter"
                        target="_blank">
                         <i class="fa fa-twitter-square" aria-hidden="true"></i>
                     </a>
-                    <a class="share-google" href="https://plus.google.com/share?url=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F"
+                    <a class="share-google"
+                       href="https://plus.google.com/share?url=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F"
                        title="Google+"
                        target="_blank">
                         <i class="fa fa-google-plus-square" aria-hidden="true"></i>
@@ -118,7 +139,8 @@
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
                     <!--<i class="fa fa-pinterest-square" aria-hidden="true" title="Pinterest"></i>-->
-                    <a class="share-email" href="mailto:?subject=Contact&amp;body=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F"
+                    <a class="share-email"
+                       href="mailto:?subject=Contact&amp;body=http%3A%2F%2Fkindmonster.cf%2Fcontact%2F"
                        title="Email" target="">
                         <i class="fa fa-envelope-square" aria-hidden="true"></i>
                     </a>

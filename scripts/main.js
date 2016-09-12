@@ -1,9 +1,9 @@
-window.onload = function() {
+window.onload = function () {
 // Set current  year in the footer:
     var date = document.querySelector('.date');
     date.innerText = new Date().getFullYear();
 
-    /*// Set current li - unnecessary:
+    /*// Set current li - unnecessary since it's already set in the html:
      var currentLi = document.querySelector('.current'),
      nav = document.querySelector('.main-nav');
      nav.addEventListener('click', function (ev) {
@@ -26,38 +26,24 @@ window.onload = function() {
 
 // Off-canvas nav menu for smaller screens (under 768px):
     var menuIcon = document.querySelector('#menu-icon'),
-        plusIcon = document.querySelector('#plus-icon'),
-        minusIcon = document.querySelector('#minus-icon'),
+        plusIcon = document.querySelectorAll('.plus-icon'),
+        minusIcon = document.querySelectorAll('.minus-icon'),
         drawer = document.querySelector('.main-nav'),
-        innerList = document.querySelector('.inner-nav');
+        innerList = document.querySelectorAll('.inner-nav');
 
     menuIcon.addEventListener('click', function (ev) {
         drawer.classList.toggle('open');
         ev.stopPropagation();
     }, false);
 
-// Hovering the plus icon or its parent element removes the hover effect from the list items:
-    plusIcon.addEventListener('mouseover', function (ev) {
-        innerList.parentElement.classList.add('no-hover');
-        ev.stopPropagation();
-    }, false);
 
-    plusIcon.parentElement.addEventListener('mouseover', function (ev) {
-        if (window.getComputedStyle(plusIcon, null).display === 'block') {
-            innerList.parentElement.classList.add('no-hover');
-        }
-        else {
-            innerList.parentElement.classList.remove('no-hover');
-        }
-         ev.stopPropagation();
-    }, false);
-
-
-// Clicking the plus icon open the inner menu, clicking the minus icon closes the inner menu:
-    plusIcon.addEventListener('click', function (ev) {
-        innerList.classList.toggle('open');
-        this.classList.toggle('rotate');
-        minusIcon.classList.toggle('rotate');
-        ev.stopPropagation();
-    }, false);
+    for (var i = 0, len = plusIcon.length; i < len; i += 1) {
+        // Clicking the plus icon opens the inner menu, clicking the minus icon closes the inner menu:
+        plusIcon[i].addEventListener('click', function (ev) {
+            ev.target.nextElementSibling.classList.toggle('open');
+            ev.target.classList.toggle('rotate');
+            ev.target.previousElementSibling.classList.toggle('rotate');
+            ev.stopPropagation();
+        }, false);
+    }
 };
