@@ -250,3 +250,16 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# package directories
+jspm_packages
+
+# Serverless directories and files
+.serverless
+handler.js
+serverless.yml
+
+# Yarn files
+package.json
+package-lock.json
+yarn.lock

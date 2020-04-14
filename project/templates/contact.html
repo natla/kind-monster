@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+        <header>
+            <img src="/images/contact/cupcake.jpg">
+            <h3 class="contact">Contact Me</h3>
+        </header>
+
+        <form name="contact" method="POST" action="{{ main.SERVICE_URL }}">
+            <fieldset class="contact-form">
+                <label for="name">
+                 <span>Name &#42;</span>
+                </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">
+                    <span>Email &#42;</span>
+                </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">
+                    <span>Message &#42;</span>
+                </label>
+                <textarea name="message" id="message" placeholder="Message me here" required></textarea>
+
+            </fieldset>
+            <input class="buy-btn" type="submit" name="submit" value="Send">
+        </form>
+        <!-- Display a response message to the user -->
+        <p id="js-form-response"></p>
+{% endblock %}

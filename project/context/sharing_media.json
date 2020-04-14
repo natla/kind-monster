@@ -1,0 +1,37 @@
+[
+  {
+    "class": "share-facebook",
+    "href": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkindmonster.cf%2F&amp;t=Kind%20Monster%20Cafe",
+    "title": "Facebook",
+    "target": "_blank",
+    "icon_class": "fa-facebook-square"
+  },
+  {
+    "class": "share-twitter",
+    "href": "https://twitter.com/share?text=Kind%20Monster%20Cafe&amp;url=https%3A%2F%2Fkindmonster.cf%2F",
+    "title": "Twitter",
+    "target": "_blank",
+    "icon_class": "fa-twitter-square"
+  },
+  {
+    "class": "share-linkedin",
+    "href": "https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fkindmonster.cf%2F&amp;title=Kind%20Monster%20Cafe",
+    "title": "LinkedIn",
+    "target": "_blank",
+    "icon_class": "fa-linkedin-square"
+  },
+  {
+    "class": "share-pinterest",
+    "href": "https://www.pinterest.com/pin/create/link/?url=https%3A%2F%2Fkindmonster.cf&media=https%3A%2F%2Fkindmonster.cf%2Fimages%2Fwinter-amis%2Fwinter1.jpg&description=Kind%20Monster%20Cafe",
+    "title": "Pinterest",
+    "target": "_blank",
+    "icon_class": "fa-pinterest-square"
+  },
+  {
+    "class": "share-email",
+    "href": "mailto:?subject=Kind%20Monster%20Cafe&amp;body=https%3A%2F%2kindmonster.cf%2F",
+    "title": "Email",
+    "target": "",
+    "icon_class": "fa-envelope-square"
+  }
+]
