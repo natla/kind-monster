@@ -25,7 +25,7 @@
 		var currentLi = $('.current');
 		currentLi.removeClass('current');
 		$(this).parent().addClass('current');
-        var newUrl = window.location.protocol + "//" + window.location.host + "/" + newPath + '/';
+        var newUrl = window.location.protocol + "//" + window.location.host + "/kind-monster/" + newPath + '/';
 
         // Make sure that we don't reload the entire page, but instead load the html of the corresponding hero section
         $.ajax({
